@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
@@ -27,13 +27,15 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-img {
+.product {
   position: relative;
+}
+
+.product img {
   max-width: 100%;
-  margin-bottom: 2px;
 }
 
 a {
@@ -53,8 +55,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .price {
@@ -72,8 +74,8 @@ a {
 
 .saleTag {
   position: absolute;
-  -webkit-transform: translate(10px, -280px);
-  transform: translate(10px, -280px);
+  top: 10px;
+  left: 10px;
   background-color: white;
   padding: 5px;
   font-family: "Poppins", sans-serif;
@@ -93,7 +95,7 @@ a {
   .col-sm-1 {
     padding: 0 15px;
     -ms-flex-preferred-size: 8.33333%;
-    flex-basis: 8.33333%;
+        flex-basis: 8.33333%;
     max-width: 8.33333%;
     text-align: center;
   }
@@ -103,7 +105,7 @@ a {
   .col-sm-2 {
     padding: 0 15px;
     -ms-flex-preferred-size: 16.66667%;
-    flex-basis: 16.66667%;
+        flex-basis: 16.66667%;
     max-width: 16.66667%;
     text-align: center;
   }
@@ -113,7 +115,7 @@ a {
   .col-sm-3 {
     padding: 0 15px;
     -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
+        flex-basis: 25%;
     max-width: 25%;
     text-align: center;
   }
@@ -123,7 +125,7 @@ a {
   .col-sm-4 {
     padding: 0 15px;
     -ms-flex-preferred-size: 33.33333%;
-    flex-basis: 33.33333%;
+        flex-basis: 33.33333%;
     max-width: 33.33333%;
     text-align: center;
   }
@@ -133,7 +135,7 @@ a {
   .col-sm-5 {
     padding: 0 15px;
     -ms-flex-preferred-size: 41.66667%;
-    flex-basis: 41.66667%;
+        flex-basis: 41.66667%;
     max-width: 41.66667%;
     text-align: center;
   }
@@ -143,7 +145,7 @@ a {
   .col-sm-6 {
     padding: 0 15px;
     -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
+        flex-basis: 50%;
     max-width: 50%;
     text-align: center;
   }
@@ -153,7 +155,7 @@ a {
   .col-sm-7 {
     padding: 0 15px;
     -ms-flex-preferred-size: 58.33333%;
-    flex-basis: 58.33333%;
+        flex-basis: 58.33333%;
     max-width: 58.33333%;
     text-align: center;
   }
@@ -163,7 +165,7 @@ a {
   .col-sm-8 {
     padding: 0 15px;
     -ms-flex-preferred-size: 66.66667%;
-    flex-basis: 66.66667%;
+        flex-basis: 66.66667%;
     max-width: 66.66667%;
     text-align: center;
   }
@@ -173,7 +175,7 @@ a {
   .col-sm-9 {
     padding: 0 15px;
     -ms-flex-preferred-size: 75%;
-    flex-basis: 75%;
+        flex-basis: 75%;
     max-width: 75%;
     text-align: center;
   }
@@ -183,7 +185,7 @@ a {
   .col-sm-10 {
     padding: 0 15px;
     -ms-flex-preferred-size: 83.33333%;
-    flex-basis: 83.33333%;
+        flex-basis: 83.33333%;
     max-width: 83.33333%;
     text-align: center;
   }
@@ -193,7 +195,7 @@ a {
   .col-sm-11 {
     padding: 0 15px;
     -ms-flex-preferred-size: 91.66667%;
-    flex-basis: 91.66667%;
+        flex-basis: 91.66667%;
     max-width: 91.66667%;
     text-align: center;
   }
@@ -203,7 +205,7 @@ a {
   .col-sm-12 {
     padding: 0 15px;
     -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
+        flex-basis: 100%;
     max-width: 100%;
     text-align: center;
   }
@@ -213,7 +215,7 @@ a {
   .col-md-1 {
     padding: 0 15px;
     -ms-flex-preferred-size: 8.33333%;
-    flex-basis: 8.33333%;
+        flex-basis: 8.33333%;
     max-width: 8.33333%;
     text-align: center;
   }
@@ -223,7 +225,7 @@ a {
   .col-md-2 {
     padding: 0 15px;
     -ms-flex-preferred-size: 16.66667%;
-    flex-basis: 16.66667%;
+        flex-basis: 16.66667%;
     max-width: 16.66667%;
     text-align: center;
   }
@@ -233,7 +235,7 @@ a {
   .col-md-3 {
     padding: 0 15px;
     -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
+        flex-basis: 25%;
     max-width: 25%;
     text-align: center;
   }
@@ -243,7 +245,7 @@ a {
   .col-md-4 {
     padding: 0 15px;
     -ms-flex-preferred-size: 33.33333%;
-    flex-basis: 33.33333%;
+        flex-basis: 33.33333%;
     max-width: 33.33333%;
     text-align: center;
   }
@@ -253,7 +255,7 @@ a {
   .col-md-5 {
     padding: 0 15px;
     -ms-flex-preferred-size: 41.66667%;
-    flex-basis: 41.66667%;
+        flex-basis: 41.66667%;
     max-width: 41.66667%;
     text-align: center;
   }
@@ -263,7 +265,7 @@ a {
   .col-md-6 {
     padding: 0 15px;
     -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
+        flex-basis: 50%;
     max-width: 50%;
     text-align: center;
   }
@@ -273,7 +275,7 @@ a {
   .col-md-7 {
     padding: 0 15px;
     -ms-flex-preferred-size: 58.33333%;
-    flex-basis: 58.33333%;
+        flex-basis: 58.33333%;
     max-width: 58.33333%;
     text-align: center;
   }
@@ -283,7 +285,7 @@ a {
   .col-md-8 {
     padding: 0 15px;
     -ms-flex-preferred-size: 66.66667%;
-    flex-basis: 66.66667%;
+        flex-basis: 66.66667%;
     max-width: 66.66667%;
     text-align: center;
   }
@@ -293,7 +295,7 @@ a {
   .col-md-9 {
     padding: 0 15px;
     -ms-flex-preferred-size: 75%;
-    flex-basis: 75%;
+        flex-basis: 75%;
     max-width: 75%;
     text-align: center;
   }
@@ -303,7 +305,7 @@ a {
   .col-md-10 {
     padding: 0 15px;
     -ms-flex-preferred-size: 83.33333%;
-    flex-basis: 83.33333%;
+        flex-basis: 83.33333%;
     max-width: 83.33333%;
     text-align: center;
   }
@@ -313,7 +315,7 @@ a {
   .col-md-11 {
     padding: 0 15px;
     -ms-flex-preferred-size: 91.66667%;
-    flex-basis: 91.66667%;
+        flex-basis: 91.66667%;
     max-width: 91.66667%;
     text-align: center;
   }
@@ -323,7 +325,7 @@ a {
   .col-md-12 {
     padding: 0 15px;
     -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
+        flex-basis: 100%;
     max-width: 100%;
     text-align: center;
   }
@@ -332,7 +334,7 @@ a {
 @media (min-width: 1024px) {
   .col-lg-1 {
     -ms-flex-preferred-size: 8.33333%;
-    flex-basis: 8.33333%;
+        flex-basis: 8.33333%;
     max-width: 8.33333%;
     padding: 0 15px;
     text-align: center;
@@ -342,7 +344,7 @@ a {
 @media (min-width: 1024px) {
   .col-lg-2 {
     -ms-flex-preferred-size: 16.66667%;
-    flex-basis: 16.66667%;
+        flex-basis: 16.66667%;
     max-width: 16.66667%;
     padding: 0 15px;
     text-align: center;
@@ -352,7 +354,7 @@ a {
 @media (min-width: 1024px) {
   .col-lg-3 {
     -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
+        flex-basis: 25%;
     max-width: 25%;
     padding: 0 15px;
     text-align: center;
@@ -362,7 +364,7 @@ a {
 @media (min-width: 1024px) {
   .col-lg-4 {
     -ms-flex-preferred-size: 33.33333%;
-    flex-basis: 33.33333%;
+        flex-basis: 33.33333%;
     max-width: 33.33333%;
     padding: 0 15px;
     text-align: center;
@@ -372,7 +374,7 @@ a {
 @media (min-width: 1024px) {
   .col-lg-5 {
     -ms-flex-preferred-size: 41.66667%;
-    flex-basis: 41.66667%;
+        flex-basis: 41.66667%;
     max-width: 41.66667%;
     padding: 0 15px;
     text-align: center;
@@ -382,7 +384,7 @@ a {
 @media (min-width: 1024px) {
   .col-lg-6 {
     -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
+        flex-basis: 50%;
     max-width: 50%;
     padding: 0 15px;
     text-align: center;
@@ -392,7 +394,7 @@ a {
 @media (min-width: 1024px) {
   .col-lg-7 {
     -ms-flex-preferred-size: 58.33333%;
-    flex-basis: 58.33333%;
+        flex-basis: 58.33333%;
     max-width: 58.33333%;
     padding: 0 15px;
     text-align: center;
@@ -402,7 +404,7 @@ a {
 @media (min-width: 1024px) {
   .col-lg-8 {
     -ms-flex-preferred-size: 66.66667%;
-    flex-basis: 66.66667%;
+        flex-basis: 66.66667%;
     max-width: 66.66667%;
     padding: 0 15px;
     text-align: center;
@@ -412,7 +414,7 @@ a {
 @media (min-width: 1024px) {
   .col-lg-9 {
     -ms-flex-preferred-size: 75%;
-    flex-basis: 75%;
+        flex-basis: 75%;
     max-width: 75%;
     padding: 0 15px;
     text-align: center;
@@ -422,7 +424,7 @@ a {
 @media (min-width: 1024px) {
   .col-lg-10 {
     -ms-flex-preferred-size: 83.33333%;
-    flex-basis: 83.33333%;
+        flex-basis: 83.33333%;
     max-width: 83.33333%;
     padding: 0 15px;
     text-align: center;
@@ -432,7 +434,7 @@ a {
 @media (min-width: 1024px) {
   .col-lg-11 {
     -ms-flex-preferred-size: 91.66667%;
-    flex-basis: 91.66667%;
+        flex-basis: 91.66667%;
     max-width: 91.66667%;
     padding: 0 15px;
     text-align: center;
@@ -442,7 +444,7 @@ a {
 @media (min-width: 1024px) {
   .col-lg-12 {
     -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
+        flex-basis: 100%;
     max-width: 100%;
     padding: 0 15px;
     text-align: center;

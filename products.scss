@@ -27,10 +27,11 @@ $gutterWidth: 30px;
   display: flex;
   flex-wrap: wrap;
 }
-img {
+.product {
   position: relative;
+}
+.product img {
   max-width: 100%;
-  margin-bottom: 2px;
 }
 
 a {
@@ -61,7 +62,8 @@ a {
 }
 .saleTag {
   position: absolute;
-  transform: translate(10px, -280px);
+  top: 10px;
+  left: 10px;
   background-color: white;
   padding: 5px;
   font-family: $font-name;
