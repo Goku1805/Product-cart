@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import "mixins.scss";
+$font-heading: "Prata", sans-serif;
+$font-name: "Poppins", sans-serif;
+$max: 12;
+$gutterWidth: 30px;
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+}
+.h2 {
+  text-align: center;
+  font-family: $font-heading;
+
+  letter-spacing: -1.5px;
+  color: rgb(34, 34, 34);
+}
+.h2 h2 {
+  font-weight: normal;
+  font-size: 30px;
+}
+.row {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+img {
+  position: relative;
+  max-width: 100%;
+  margin-bottom: 2px;
+}
+
+a {
+  text-decoration: none;
+}
+.name {
+  font-family: $font-name;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 10px;
+  color: rgb(119, 119, 119);
+}
+.priceParent {
+  display: flex;
+  justify-content: center;
+}
+.price {
+  font-family: $font-name;
+  font-size: 16px;
+  color: rgb(34, 34, 34);
+  font-weight: 550;
+}
+
+.sale {
+  color: #777777;
+  text-decoration: line-through;
+  font-size: 13px;
+}
+.saleTag {
+  position: absolute;
+  transform: translate(10px, -280px);
+  background-color: white;
+  padding: 5px;
+  font-family: $font-name;
+  font-size: 11px;
+}
+.fa.fa-star {
+  font-size: 13px;
+  color: #777777;
+}
+.fa.fa-star.checked {
+  color: aqua;
+}
+@for $i from 1 through $max {
+  .col-sm-#{$i} {
+    @include breakpoint(sm) {
+      $width: 100%/12;
+      padding: 0 #{$gutterWidth / 2};
+      flex-basis: $width * $i;
+      max-width: $width * $i;
+      text-align: center;
+    }
+  }
+}
+
+@for $i from 1 through $max {
+  .col-md-#{$i} {
+    @include breakpoint(md) {
+      $width: 100%/12;
+      padding: 0 #{$gutterWidth / 2};
+      flex-basis: $width * $i;
+      max-width: $width * $i;
+      text-align: center;
+    }
+  }
+}
+
+@for $i from 1 through $max {
+  .col-lg-#{$i} {
+    @include breakpoint(lg) {
+      $width: 100%/12;
+      flex-basis: $width * $i;
+      max-width: $width * $i;
+      padding: 0 #{$gutterWidth / 2};
+      text-align: center;
+    }
+  }
+}
