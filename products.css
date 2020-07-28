@@ -44,6 +44,10 @@ figure img {
 
 figure:hover .btn {
   visibility: visible;
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
 }
 
 .btn {
