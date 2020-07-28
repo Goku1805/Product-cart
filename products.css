@@ -34,8 +34,34 @@
   position: relative;
 }
 
-.product img {
+figure {
+  position: relative;
+}
+
+figure img {
   max-width: 100%;
+}
+
+figure:hover .btn {
+  visibility: visible;
+}
+
+.btn {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  text-align: center;
+  visibility: hidden;
+}
+
+.btn-cart {
+  color: antiquewhite;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  font-size: 11px;
 }
 
 a {
@@ -74,8 +100,8 @@ a {
 
 .saleTag {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 15px;
+  left: 55px;
   background-color: white;
   padding: 5px;
   font-family: "Poppins", sans-serif;
